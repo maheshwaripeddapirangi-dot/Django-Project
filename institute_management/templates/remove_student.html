@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove Student</title>
+</head>
+<body>
+    <h2>Remove Student</h2>
+    <form method="POST" action="">
+        {% csrf_token %}
+        <label>Enter Student Name</label>
+        <input name="username" placeholder="Student Name">
+        <label>Enter Student ID</label>
+        <input name="id" placeholder="Student ID">
+        <button type="submit">Remove Student</button>
+    </form>
+</body>
+</html>

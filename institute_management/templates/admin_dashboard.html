@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+</head>
+<body>
+    <h1>Welcome {{username}} to 10000 coders </h1>
+    <h2>Hi {{username}} select your choice</h2>
+    <a href="{% url 'create_student' %}"><button>Add Student</button></a>
+    <a href="{% url 'create_course' %}"><button>Create Course</button></a>
+    <a href="{% url 'remove_student' %}"><button>Remove Student</button></a>
+
+    <hr>
+    {% for student in students %}
+    {{student.name}}
+    {{student.phone_number}}
+    {{student.address}}
+    {{student.password}}
+    <hr>
+    {% endfor%}
+   
+</body>
+</html>

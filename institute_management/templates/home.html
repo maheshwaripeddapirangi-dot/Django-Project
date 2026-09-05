@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+<body>
+    <h1>Welcome to 10000 Coders</h1>
+    <h2>Admin Login</h2>
+    <form method="post" action="admin_int/">
+        {% csrf_token %}
+        <label>Username</label>
+        <input name="username" placeholder="Username">
+        <label>Password</label>
+        <input name="password" placeholder="Password">
+        <button type="submit">Login</button>
+    </form>
+    {% if status %}
+    <h5>Invalid Username or Password</h5>
+    {% endif %}
+</body>
+</html>

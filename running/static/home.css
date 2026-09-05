@@ -1,0 +1,51 @@
+*{
+    background-color: rgb(151, 151, 229);
+}
+h1{
+    text-align: center;
+    color: rgb(39, 28, 2);
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+    
+}
+
+.card {
+    height: 200px;
+    width: 200px;
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    row-gap: 20px;
+}
+input{
+    margin: 10px;
+    background-color: rgb(144, 164, 181);
+    color: rgb(4, 1, 29);
+    border-radius: 10px;
+    box-shadow: 20px;
+    box-sizing: 100px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 20px 20px;
+    background-color: royalblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+button:hover {
+    background-color: darkblue;
+}
